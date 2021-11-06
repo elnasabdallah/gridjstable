@@ -35,6 +35,11 @@ const Table = () => {
         <Grid
           columns={["Name", "Email", "dropdown", "input", "Actions"]}
           data={refinedData}
+          pagination={{
+            enabled: true,
+            limit: 8,
+          }}
+          search={true}
         />
       </div>
     </div>
