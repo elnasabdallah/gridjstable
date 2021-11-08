@@ -3,6 +3,8 @@ import Table from "./components/Table";
 import Save from "./components/Save";
 import { fetchData } from "./redux/actions/mainDataActions";
 import { useDispatch } from "react-redux";
+import Hello from "./components/Table2";
+import Table2 from "./components/Table2";
 
 function App() {
   const dispatch = useDispatch();
@@ -11,8 +13,10 @@ function App() {
   });
   return (
     <div className="container-fluid">
-      <Table />
+      {/* <Table /> */}
       <Save />
+      <Table2 />
+      <Hello />
     </div>
   );
 }

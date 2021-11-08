@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   {
     name: "NAsir",
     email: "elnas@gmail.com",
@@ -140,3 +140,10 @@ export const data = [
     check: false,
   },
 ];
+const dataSet1 = [];
+data.forEach((item, i) => {
+  item["id"] = i;
+  dataSet1.push(item);
+});
+
+export const dataSet = [...dataSet1];
